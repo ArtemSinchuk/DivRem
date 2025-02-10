@@ -1,8 +1,8 @@
 package com.github.ArtemSinchuk.DivRem;
 
 public class Division {
-     double dividend = Math.random() * 100;
-     double divisor = Math.random() * 100;
+     double dividend = 0;
+     double divisor = 0;
 
     public static void main( String[] args ) {
         Division d = new Division();
