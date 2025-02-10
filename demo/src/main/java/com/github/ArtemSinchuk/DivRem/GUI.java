@@ -21,7 +21,7 @@ public class GUI extends JFrame {
   private JTextField divisorField = new JTextField(10);
   private JButton calculateButton = new JButton("Calculate");
   private GridLayout layout = new GridLayout(0, 1, 0, 0);
-  private ImageIcon logo = new ImageIcon("logo.png");
+  private ImageIcon logo = new ImageIcon(getClass().getResource("/logo.png"));
 
   public GUI() {
     runGUI();
@@ -55,16 +55,13 @@ public class GUI extends JFrame {
 
   private void textFieldConf() {
     dividendField.setSize(50, 10);
-    
   }
 
   private void buttonConf() {
     calculateButton.addActionListener(ActionListener -> {
       double dividend = Double.parseDouble(dividendField.getText());
       double divisor = Double.parseDouble(divisorField.getText());
-      int quotient = (int) (dividend / divisor);
-      int remainder = (int) (dividend % divisor);
-      quotientLabel.setText("Result: " + quotient + "; R: " + remainder);
+      quotientLabel.setText(Division.divide(dividend, divisor));
     });
   }
 
