@@ -18,7 +18,7 @@ DivRem is a simple Java application that allows users to perform integer divisio
 4. Use the right-click popup menu for additional options.
 
 ## Preview
-![DivRem in action](DivRem2025-02-1115-43-44-ezgif.com-video-to-gif-converter.gif)
+![Image](https://github.com/user-attachments/assets/61e66cc8-9f82-409d-8013-cbcb730ce2bd)
 
 ## License
 This project is open-source and available under the [MIT License](#).
