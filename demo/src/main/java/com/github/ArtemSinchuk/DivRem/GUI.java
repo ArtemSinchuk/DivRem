@@ -1,4 +1,4 @@
-package com.github.ArtemSinchuk.DivRem;
+package com.github.artemsinchuk.divRem;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -8,7 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;  
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class GUI extends JFrame {
@@ -23,11 +23,7 @@ public class GUI extends JFrame {
   private GridLayout layout = new GridLayout(0, 1, 0, 0);
   private ImageIcon logo = new ImageIcon(getClass().getResource("/logo.png"));
 
-  public GUI() {
-    runGUI();
-  }
-
-  private void runGUI() {
+  public void runGUI() {
     frameConf();
     panelConf();
     labelConf();
@@ -36,7 +32,7 @@ public class GUI extends JFrame {
     addComponents();
   }
 
-  private void frameConf() {
+  public void frameConf() {
     setTitle("DivRem");
     setIconImage(logo.getImage());
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,13 +47,11 @@ public class GUI extends JFrame {
     mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
   }
 
-  private void labelConf() {}
+  public void labelConf() {}
 
-  private void textFieldConf() {
-    dividendField.setSize(50, 10);
-  }
+  public void textFieldConf() {}
 
-  private void buttonConf() {
+  public void buttonConf() {
     calculateButton.addActionListener(ActionListener -> {
       double dividend = Double.parseDouble(dividendField.getText());
       double divisor = Double.parseDouble(divisorField.getText());
@@ -65,7 +59,7 @@ public class GUI extends JFrame {
     });
   }
 
-  private void addComponents() {
+  public void addComponents() {
     add(mainPanel);
     mainPanel.add(dividendLabel);
     mainPanel.add(dividendField);
@@ -73,9 +67,5 @@ public class GUI extends JFrame {
     mainPanel.add(divisorField);
     mainPanel.add(quotientLabel);
     mainPanel.add(calculateButton);
-  }
-
-  public static void main(String[] args) {
-    new GUI();
   }
 }
