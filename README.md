@@ -15,7 +15,6 @@ DivRem is a simple Java application that allows users to perform integer divisio
 1. Enter the dividend and divisor.
 2. Click the **Calculate** button.
 3. View the result displaying the quotient and remainder.
-4. Use the right-click popup menu for additional options.
 
 ## Preview
 ![Image](https://github.com/user-attachments/assets/61e66cc8-9f82-409d-8013-cbcb730ce2bd)
