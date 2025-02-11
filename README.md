@@ -20,7 +20,7 @@ DivRem is a simple Java application that allows users to perform integer divisio
 ![Image](https://github.com/user-attachments/assets/61e66cc8-9f82-409d-8013-cbcb730ce2bd)
 
 ## License
-This project is open-source and available under the [MIT License](#).
+This project is open-source and available under the [MIT License](https://github.com/ArtemSinchuk/DivRem/blob/main/LICENSE).
 
 ## Author
 Developed by **Artem Sinchuk**.
